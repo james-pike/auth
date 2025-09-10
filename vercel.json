@@ -18,5 +18,10 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "src/routes/plugin@auth.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
