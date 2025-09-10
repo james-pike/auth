@@ -1,4 +1,4 @@
-// src/routes/api/classes/index.ts
+// src/routes/api/c lasses/index.ts
 import type { RequestHandler } from '@builder.io/qwik-city';
 import { tursoClient, getClasses, createClass, updateClass, deleteClass } from '~/lib/turso';
 
