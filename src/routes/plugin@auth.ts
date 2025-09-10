@@ -15,13 +15,13 @@ export const { onRequest, useSession, useSignIn, useSignOut } = QwikAuth$(() => 
   console.log("Runtime environment:", typeof process, typeof globalThis);
   
   // Try different ways to access env vars
-  const adminUsername = getEnvVar('ADMIN_USERNAME');
-  const adminPassword = getEnvVar('ADMIN_PASSWORD'); 
+  const adminUsername = getEnvVar('VERCEL_ADMIN_USERNAME');
+  const adminPassword = getEnvVar('VERCEL_ADMIN_PASSWORD'); 
   const authSecret = getEnvVar('AUTH_SECRET');
   
   console.log("Environment variable check:");
-  console.log("- ADMIN_USERNAME:", adminUsername);
-  console.log("- ADMIN_PASSWORD exists:", !!adminPassword);
+  console.log("- VERCEL_ADMIN_USERNAME:", adminUsername);
+  console.log("- VERCEL_ADMIN_PASSWORD exists:", !!adminPassword);
   console.log("- AUTH_SECRET exists:", !!authSecret);
   console.log("- process.env keys count:", Object.keys(process.env || {}).length);
 
